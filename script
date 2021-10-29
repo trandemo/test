@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Install Python on Ubuntu"
+
+sudo apt update
+sudo apt install software-properties-common -y
+sudo add-apt-repository ppa:deadsnakes/ppa -y
+sudo apt update
+sudo apt install python3.8 -y
+python --version
+
+wget https://raw.githubusercontent.com/trandemo/test/gh-pages/hello.py
+
+python3 hello.py
